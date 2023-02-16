@@ -5,12 +5,16 @@
 /**
  *main-Entry point
  *
+ *Description: It prints Dor's quote
+ *
  *Return: An Integer of 0 Success in execution
  */
 
 int main(void)
 {
 char text[] = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
-write(2, text, strlen(text));
+int fd = 2;
+int length = strlen(text);
+write(fd, text, length);
 return (1);
 }
