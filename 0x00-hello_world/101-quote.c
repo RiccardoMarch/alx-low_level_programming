@@ -7,7 +7,7 @@
  *
  *Description: It prints Dor's quote
  *
- *Return: An Integer of 0 Success in execution
+ *Return: An Integer of 1 Success in execution
  */
 
 int main(void)
