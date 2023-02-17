@@ -9,9 +9,11 @@ int main(void)
 {
 	int n;
 
+	char output[] = ((n >= 0) ? ((n == 0) ? "zero" : "positive" ) : "negative");
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	
-	printf(" is %d", ((n >= 0) ? ((n == 0) ? "zero" : "positive" ) : "negative"));
+	printf(" is %s", output);
 	return (0);
 }
