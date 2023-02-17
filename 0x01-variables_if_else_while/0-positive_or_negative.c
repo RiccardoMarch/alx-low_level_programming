@@ -17,6 +17,6 @@ int main(void)
 
 	output = (n >= 0) ? (n == 0) ? "zero" : "positive" : "negative";
 	
-	printf("%d is %s", n, output);
+	printf("%d is %s\n", n, output);
 	return (0);
 }
