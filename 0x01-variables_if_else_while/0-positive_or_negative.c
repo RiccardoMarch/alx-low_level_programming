@@ -5,7 +5,7 @@
 #include <time.h>
 /* Return : 0 for success */
 
-/* main - Entry point */
+/*main-Entry point */
 int main(void)
 {
 	int n;
