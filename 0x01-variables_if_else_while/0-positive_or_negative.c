@@ -9,7 +9,7 @@ int main(void)
 {
 	int n;
 
-	char output[] = ((n >= 0) ? ((n == 0) ? "zero" : "positive" ) : "negative");
+	char output[] = (n >= 0) ? "positive" : "negative";
 
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
