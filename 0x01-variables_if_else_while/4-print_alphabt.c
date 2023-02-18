@@ -14,11 +14,13 @@ int main(void)
 	char alpha = 'a';
 
 	do {
-	if (alpha == 'q' || alpha == 'e')
-	continue;
-	putchar(alpha);
-	alpha++;
+		if (alpha == 'q' || alpha == 'e')
+			continue;
+			putchar(alpha);
+
+		alpha++;
 	} while (alpha <= 'z');
+
 	putchar('\n');
 	return (0);
 }
