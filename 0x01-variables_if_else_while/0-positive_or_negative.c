@@ -3,6 +3,7 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
+
 /**
  *main-Entry point
  *
@@ -10,6 +11,7 @@
  *
  *Return: An Integer of 1 Success in execution
  */
+ 
 int main(void)
 {
 	int n;
