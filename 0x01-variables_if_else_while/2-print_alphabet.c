@@ -7,7 +7,7 @@
  *
  *Description: output a-z alphabet and new line
  *
- *Return: An Integer of 1 Success in execution
+ *Return: An Integer of 0 Success in execution
  */
 int main(void)
 {
@@ -16,7 +16,7 @@ int main(void)
 	do {
 	putchar(alpha);
 	alpha++;
-    } while (alpha <= 'z');
+	} while (alpha <= 'z');
 	putchar('\n');
 	return (0);
 }
