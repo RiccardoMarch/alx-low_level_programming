@@ -3,9 +3,13 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <time.h>
-/* Return : 0 for success */
-
-/*main-Entry point */
+/**
+ *main-Entry point
+ *
+ *Description: Check if an n is positive, zero or negative
+ *
+ *Return: An Integer of 1 Success in execution
+ */
 int main(void)
 {
 	int n;
