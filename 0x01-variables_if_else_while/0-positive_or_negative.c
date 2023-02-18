@@ -11,11 +11,11 @@
  *
  *Return: An Integer of 1 Success in execution
  */
- 
 int main(void)
 {
 	int n;
 	char *output;
+
 	srand(time(0));
 	n = rand() - RAND_MAX / 2;
 	/* Used tenary method to set value to the string variable */
