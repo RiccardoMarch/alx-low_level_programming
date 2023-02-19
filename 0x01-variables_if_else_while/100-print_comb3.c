@@ -13,11 +13,12 @@ int main(void)
 {
 	int ones;
 	int tens;
+	int offset = '0';
 
 	for (tens = 0; tens <= 9; tens++) {
 		for (ones = 0; ones <= 9; ones++) {
-			putchar(tens);
-			putchar(ones);
+			putchar(offset + tens);
+			putchar(offset + ones);
 
 			if (tens != 8 && ones != 9) {
 				putchar(',');
