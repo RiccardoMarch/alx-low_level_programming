@@ -15,17 +15,17 @@ int main(void)
 	int b;
 	int offset = '0';
 
-	for (a = 0; a < 10; a++)
+	for (a = 0; a < 9; a++)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			if (a == b && a > b)
+			if (a == b || a > b)
 				continue;
 
 			putchar(offset + b);
 			putchar(offset + a);
 
-			if ((a + b) == 17)
+			if ((a + b) >= 17)
 				continue;
 
 			putchar(',');
