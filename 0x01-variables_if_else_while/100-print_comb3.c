@@ -19,11 +19,11 @@ int main(void)
 	{
 		for (b = 0; b < 10; b++)
 		{
-			if (tens == ones && a > b)
+			if (a == b && a > b)
 				continue;
 
-			putchar(offset + tens);
-			putchar(offset + ones);
+			putchar(offset + b);
+			putchar(offset + a);
 
 			if ((a + b) == 17)
 				continue;
