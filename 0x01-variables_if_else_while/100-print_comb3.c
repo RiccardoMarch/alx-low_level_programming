@@ -20,7 +20,7 @@ int main(void)
 			putchar(offset + tens);
 			putchar(offset + ones);
 
-			if (tens != 8 && ones != 9) {
+			if (tens != 8 || ones != 9) {
 				putchar(',');
 				putchar(' ');
             }
