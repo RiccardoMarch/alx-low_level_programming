@@ -14,7 +14,7 @@ int main(void)
 	char alpha = 'a';
 
 	do {
-		if (alpha != 'q' && alpha !!= 'e')
+		if (alpha != 'q' && alpha != 'e')
 			putchar(alpha);
 
 		alpha++;
