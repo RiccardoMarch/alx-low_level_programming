@@ -5,7 +5,7 @@
 /**
  *main-Entry point
  *
- *Description: 
+ *Description:
  *
  *Return: An Integer of 0 Success in execution
  */
@@ -15,10 +15,13 @@ int main(void)
 	int tens;
 	int offset = '0';
 
-	for (tens = 0; tens < 9; tens++) 
+	for (tens = 0; tens < 9; tens++)
 	{
-		for (ones = 0; ones < 10; ones++) 
+		for (ones = 0; ones < 10; ones++)
 		{
+			if (tens == ones)
+				continue;
+
 			putchar(offset + tens);
 			putchar(offset + ones);
 
