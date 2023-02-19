@@ -22,8 +22,8 @@ int main(void)
 			if (a == b || a > b)
 				continue;
 
-			putchar(offset + b);
 			putchar(offset + a);
+			putchar(offset + b);
 
 			if ((a + b) >= 17)
 				continue;
