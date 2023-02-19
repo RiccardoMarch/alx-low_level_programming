@@ -20,7 +20,7 @@ int main(void)
 	{
 		for (b = 0; b < 9; b++)
 		{
-			for (c = 0; c < 10)
+			for (c = 0; c < 10: c++)
 			{
 				if (a == b && b == c || a > b && b > c)
 					continue;
