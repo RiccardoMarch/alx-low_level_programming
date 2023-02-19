@@ -11,23 +11,31 @@
  */
 int main(void)
 {
-	int one;
-	int ten;
-	int hundred;
+	int a;
+	int b;
+	int c;
+	int offset = '0';
 
-	for (hundred = 0; hundred <= 9; hundred++) {
-		for (ten = (hundred + 1); ten <= 9; ten++) {
-			for (one = (ten + 1); one <= 9; one++) { 
-				putchar(hundred);
-				putchar(ten);
-				putchar(one);
+	for (a = 0; a < 8; a++)
+	{
+		for (b = 0; b < 9; b++)
+		{
+			for (c = 0; c < 10)
+			{
+				if (a == b && b == c || a > b && b > c)
+					continue;
 
-				if (hundred != 7 && ten != 8 && one != 9) {
-					putchar(',');
-					putchar(' ');
-                }
-            }
-        }
+				putchar(offset + a);
+				putchar(offset + b);
+				putchar(offset + c);
+
+				if ((a + b + c) >= 24)
+					continue;
+
+				putchar(',');
+				putchar(' ');
+			}
+		}
 	}
 
 	putchar('\n');
