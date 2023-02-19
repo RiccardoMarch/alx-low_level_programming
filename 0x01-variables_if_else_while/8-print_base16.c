@@ -11,17 +11,16 @@
  */
 int main(void)
 {
-	int n = 0;
 	char a_to_f = 'a';
+	int i;
+	int offset = '0';
+
+	for (i = offset; i < (offset + 10); i++)
+		putchar(i);
 
 	do {
-	putchar(n);
-	n++;
-	} while (n <= 9);
-
-	do {
-	putchar(a_to_f);
-	a_to_f++;
+		putchar(a_to_f);
+		a_to_f++;
 	} while (a_to_f <= 'f');
 	putchar('\n');
 	return (0);
