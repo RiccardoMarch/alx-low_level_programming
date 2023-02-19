@@ -14,8 +14,8 @@ int main(void)
 	char alpha = 'z';
 
 	do {
-	putchar(alpha);
-	alpha--;
+		putchar(alpha);
+		alpha--;
 	} while (alpha >= 'a');
 	putchar('\n');
 	return (0);
