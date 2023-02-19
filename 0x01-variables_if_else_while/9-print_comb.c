@@ -14,7 +14,8 @@ int main(void)
 	int i;
 	int offset = '0';
 
-	for (i = offset; i < (offset + 10); i++) {
+	for (i = offset; i < (offset + 10); i++)
+	{
 		putchar(i);
 		if (i == (offset + 9))
 			continue;
