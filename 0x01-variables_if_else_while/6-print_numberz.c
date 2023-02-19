@@ -11,10 +11,11 @@
  */
 int main(void)
 {
-	char num = '0';
+	int i;
+	int offset = '0';
 
-	for (i = 0; i < 10; i++)
-		putchar(i + '0');
+	for (i = offset; i < (offset + 10); i++)
+		putchar(i);
 
 	putchar('\n');
 	return (0);
