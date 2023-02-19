@@ -22,7 +22,7 @@ int main(void)
 		{
 			for (c = 0; c < 10; c++)
 			{
-				if ((a == b && b == c) || (a > b && b > c))
+				if (a == b || b == c || c == a || a > b || b > c || a > c)
 					continue;
 
 				putchar(offset + a);
