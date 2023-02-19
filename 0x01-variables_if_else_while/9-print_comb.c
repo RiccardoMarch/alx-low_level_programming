@@ -13,15 +13,17 @@ int main(void)
 {
 	int n = 0;
 
-	do {
-		putchar(n);
-		if (n != 9) {
-			putchar(',');
-			putchar(' ');
-		}
+	int i;
+	int offset = '0';
 
-		n++;
-	} while (n <= 9);
+	for (i = offset; i < (offset + 10); i++) {
+		putchar(i);
+		if (i == (offset + 9))
+			continue;
+
+		putchar(',');
+		putchar(' ');
+	}
 
 	putchar('\n');
 	return (0);
