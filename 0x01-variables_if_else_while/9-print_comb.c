@@ -11,8 +11,6 @@
  */
 int main(void)
 {
-	int n = 0;
-
 	int i;
 	int offset = '0';
 
