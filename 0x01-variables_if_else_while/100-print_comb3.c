@@ -11,21 +11,21 @@
  */
 int main(void)
 {
-	int ones;
-	int tens;
+	int a;
+	int b;
 	int offset = '0';
 
-	for (tens = 0; tens < 9; tens++)
+	for (a = 0; a < 10; a++)
 	{
-		for (ones = 0; ones < 10; ones++)
+		for (b = 0; b < 10; b++)
 		{
-			if (tens == ones)
+			if (tens == ones && a > b)
 				continue;
 
 			putchar(offset + tens);
 			putchar(offset + ones);
 
-			if (tens == 8 && ones == 9)
+			if ((a + b) == 17)
 				continue;
 
 			putchar(',');
