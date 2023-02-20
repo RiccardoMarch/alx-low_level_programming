@@ -11,27 +11,27 @@
  */
 int main(void)
 {
+	int index;
 	int a;
 	int b;
-	int c;
 	int offset = '0';
-
-	for (a = 0; a < 8; a++)
+	int size = 100;
+	
+	for (index = 0; index < (size * size); index++)
 	{
-		for (b = 0; b < 9; b++)
+		a = (int)(index / size);
+		b = (index % size);
+
+		if (a < b)
 		{
-			for (c = 0; c < 10; c++)
+			putchar(offset + (int)(a / 10));
+			putchar(offset + (int)(a % 10));
+			putchar(' ');
+			putchar(offset + (int)(b / 10));
+			putchar(offset + (int)(b % 10));
+
+			if (a != 98 || b != 99)
 			{
-				if (a == b || b == c || c == a || a > b || b > c || a > c)
-					continue;
-
-				putchar(offset + a);
-				putchar(offset + b);
-				putchar(offset + c);
-
-				if ((a + b + c) >= 24)
-					continue;
-
 				putchar(',');
 				putchar(' ');
 			}
