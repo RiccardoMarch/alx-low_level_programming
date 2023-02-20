@@ -16,7 +16,7 @@ int main(void)
 	int b;
 	int offset = '0';
 	int size = 100;
-	
+
 	for (index = 0; index < (size * size); index++)
 	{
 		a = (int)(index / size);
