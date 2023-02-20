@@ -16,7 +16,11 @@ int main(void)
 	int b;
 	int offset = '0';
 	int size = 100;
-
+	/**
+	* Below I've just used a single loop instead of using another nested loop
+	* it's a bit more complex to understand but quite familiar in storing
+	* a 2D array in a 1D array eg. floatbufferarrays uses only 1D arrays
+	*/
 	for (index = 0; index < (size * size); index++)
 	{
 		a = (int)(index / size);
