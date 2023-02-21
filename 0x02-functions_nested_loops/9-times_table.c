@@ -60,7 +60,8 @@ void times_table(void)
 					n /= 10;
 			}
 
-			_putchar(',');
+			if(x != 9)
+				_putchar(',');
 		}
 		_putchar('\n');
 	}
