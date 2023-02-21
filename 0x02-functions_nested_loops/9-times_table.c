@@ -35,6 +35,8 @@ void times_table(void)
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
 
+			printf("v:[%d] c:[%d]", val, count);
+
 			for (index = 0; index < (max_digits - count); index++)
 			{
 				_putchar(' ');
