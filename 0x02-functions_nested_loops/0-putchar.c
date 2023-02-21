@@ -16,7 +16,7 @@ int main(void)
 	int i;
 	char *output = "_putchar";
 
-	for (i = 0; i < strlen(output); i++)
+	for (i = 0; i < (int)strlen(output); i++)
 	{
 		_putchar(output[i]);
 	}
