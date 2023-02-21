@@ -54,7 +54,7 @@ void times_table(void)
 				n /= 10;
 				printf("%d", n);
 			}
-			printf(",")
+			printf(",");
 
 			_putchar(',');
 		}
