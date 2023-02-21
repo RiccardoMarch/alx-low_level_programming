@@ -40,12 +40,17 @@ void times_table(void)
 				_putchar(' ');
 			}
 
+			index = 1;
+
 			for (index = 1; index < count; index++)
 				n *= 10;
 
+			index = 0;
+
 			for (index = 0; index < count; index++)
 			{
-				putchar((int)(val / n) + '0');
+				putchar(((int)(val / n)) + '0');
+				val = (val - (((int)val / n) * n));
 				n /= 10;
 			}
 
