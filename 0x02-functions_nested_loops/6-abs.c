@@ -2,7 +2,7 @@
 
 /**
 * _abs - computes the absolute value
-* @c: parameter value that's been passed in
+* @n: parameter value that's been passed in
 * Return: absolute value
 */
 
