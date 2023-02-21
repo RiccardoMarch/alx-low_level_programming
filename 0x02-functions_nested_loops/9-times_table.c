@@ -1,4 +1,7 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
 * times_table - void
@@ -21,8 +24,8 @@ void times_table(void)
 		for (x = 0; x < 10; x++)
 		{
 			if (x == 0) {
-				putchar((x * y) + '0'); // value stays zero
-				putchar(',');
+				_putchar((x * y) + '0'); // value stays zero
+				_putchar(',');
 			}
 
 			val = x * y;
@@ -30,10 +33,10 @@ void times_table(void)
 
 			for (index = 0; index < (max_digits - count); index++)
 			{
-				putchar(' ');
+				_putchar(' ');
 			}
-			putchar(val + '0');
-			putchar(',');
+			_putchar(val + '0');
+			_putchar(',');
 		}
 		_putchar('\n');
 	}
