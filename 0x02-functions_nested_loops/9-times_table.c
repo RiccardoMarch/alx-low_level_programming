@@ -42,13 +42,13 @@ void times_table(void)
 			for (i = 1; i < count; i++)
 				n *= 10;
 
-			for (index = 0; index < count; index++)
+			for (i = 0; i < count; i++)
 			{
 				k = (int)(val / n);
 				_putchar(k + '0');
 				val = (val - (k * n));
 				
-				if (index + 1 < count)
+				if (i + 1 < count)
 					n /= 10;
 			}
 
