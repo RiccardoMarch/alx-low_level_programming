@@ -1,4 +1,7 @@
 #include "main.h"
+#include <string.h>
+#include <stdlib.h>
+#include <stdio.h>
 
 /**
 * print_last_digit - prints the last digit
@@ -8,7 +11,7 @@
 
 int print_last_digit(int n)
 {
-	char *val = '0' + n;
+	char *val = "" + n;
 	int size = strlen(val);
 
 	_putchar(*val[size-1]);
