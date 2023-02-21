@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 1024; i++)
 		result += ((i % 5) == 0 || (i % 3) == 0) ? i : 0;
-	
+
 	printf("%d\n", result);
 	return (0);
 }
