@@ -8,9 +8,7 @@
 */
 void times_table(void)
 {
-	int x, y;
-	int val, count;
-	int i, n, k;
+	int x, y, val, count, i, n;
 	/** max_count the amount of spaces between commas */
 	int max_count = 3;
 	/** table_size the size of the table 10x10, 20x20, 30x30 will work the same*/
@@ -18,14 +16,10 @@ void times_table(void)
 
 	for (y = 0; y < table_size; y++)
 	{
-		for (x = 0; x < table_size; x++)
+		_putchar('0');
+		_putchar(',');
+		for (x = 1; x < table_size; x++)
 		{
-			if (x == 0) 
-			{
-				_putchar((x * y) + '0');
-				_putchar(',');
-				continue;
-			}
 			n = 1;
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
@@ -38,12 +32,9 @@ void times_table(void)
 
 			for (i = 0; i < count; i++)
 			{
-				k = (int)(val / n);
-				_putchar(k + '0');
-				val = (val - (k * n));
-
-				if (i + 1 < count)
-					n /= 10;
+				_putchar((int)(val / n) + '0');
+				val = (val - ((int)(val / n) * n));
+				n /= 10;
 			}
 
 			if(x != (table_size - 1))
