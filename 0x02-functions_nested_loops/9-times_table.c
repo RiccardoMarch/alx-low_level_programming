@@ -52,7 +52,7 @@ void times_table(void)
 				putchar(((int)(val / n)) + '0');
 				val = (val - (((int)val / n) * n));
 				n /= 10;
-				printf(n);
+				printf("%d", n);
 			}
 
 			_putchar(',');
