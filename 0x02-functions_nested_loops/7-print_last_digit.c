@@ -11,7 +11,7 @@
 
 int print_last_digit(int n)
 {
-	char *val = "" + n;
+	char *val = "" + (char*)n;
 	int size = strlen(val);
 
 	_putchar(val[size-1]);
