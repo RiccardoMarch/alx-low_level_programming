@@ -1,5 +1,5 @@
 #include "main.h"
-#include <string.h>
+#include <stdio.h>
 /**
 * times_table - void
 * Description: Prints the times table & it's flexible
