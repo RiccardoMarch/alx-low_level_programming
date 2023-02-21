@@ -23,7 +23,7 @@ void times_table(void)
 
 	for (y = 0; y < 10; y++)
 	{
-		for (x = 0; x < 10; x++)
+		for (x = 0; x < 9; x++)
 		{
 			if (x == 0) {
 				/* x * y = 0, x is 0 */
@@ -35,7 +35,7 @@ void times_table(void)
 
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
-			
+
 			for (index = 0; index < (max_digits - count); index++)
 			{
 				_putchar(' ');
