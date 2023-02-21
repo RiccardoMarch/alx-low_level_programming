@@ -19,10 +19,12 @@ void times_table(void)
 	int i;
 	int n = 1;
 	int k;
+	int max_count = 4;
+	int table_size = 15;
 
-	for (y = 0; y < 10; y++)
+	for (y = 0; y < table_size; y++)
 	{
-		for (x = 0; x < 10; x++)
+		for (x = 0; x < table_size; x++)
 		{
 			if (x == 0) {
 				/* x * y = 0, x is 0 */
@@ -34,7 +36,7 @@ void times_table(void)
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
 
-			for (i = 0; i < (3 - count); i++)
+			for (i = 0; i < (max_count - count); i++)
 				_putchar(' ');
 
 			for (i = 1; i < count; i++)
@@ -50,7 +52,7 @@ void times_table(void)
 					n /= 10;
 			}
 
-			if(x != 9)
+			if(x != (table_size - 1))
 				_putchar(',');
 		}
 		_putchar('\n');
