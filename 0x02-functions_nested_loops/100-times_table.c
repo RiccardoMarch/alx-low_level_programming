@@ -8,6 +8,9 @@
 */
 void print_times_table(int size)
 {
+    if (size > 15 || size <= 0)
+        return;
+
 	int x, y, val, count, i, n;
 	/** max_count the amount of spaces between commas */
 	/** table_size the size of the table 10x10, 20x20, 30x30 will work the same*/
