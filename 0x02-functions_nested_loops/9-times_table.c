@@ -21,9 +21,9 @@ void times_table(void)
 	int n = 1;
 	int k;
 
-	for (y = 0; y < 2; y++)
+	for (y = 0; y < 10; y++)
 	{
-		for (x = 0; x < 2; x++)
+		for (x = 0; x < 10; x++)
 		{
 			if (x == 0) {
 				/* x * y = 0, x is 0 */
@@ -36,9 +36,6 @@ void times_table(void)
 
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
-
-			printf("Value :{%d}\n", val);
-			printf("Count :{%d}\n", count);
 
 			for (index = 0; index < (max_digits - count); index++)
 			{
@@ -56,7 +53,6 @@ void times_table(void)
 			for (index = 0; index < count; index++)
 			{
 				k = (int)(val / n);
-				printf("K :{%d}", k);
 				_putchar(k + '0');
 				val = (val - (k * n));
 				
