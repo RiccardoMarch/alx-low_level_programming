@@ -11,10 +11,9 @@
 
 int print_last_digit(int n)
 {
-	char *val = "" + (char*)n;
-	int size = strlen(val);
+	int val = n % 10;
 
-	_putchar(val[size-1]);
+	_putchar(val);
 
-	return ((int)val[size-1]);
+	return (val);
 }
