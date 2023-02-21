@@ -12,10 +12,13 @@ void print_times_table(int size)
 	/** max_count the amount of spaces between commas */
 	/** table_size the size of the table 10x10, 20x20, 30x30 will work the same*/
 	int max_count = 4, table_size = size + 1;
-	
 	if (size > 15 || size <= 0)
-        return;
+	{
+		if (size == 0)
+			_putchar('0');
 
+        return;
+	}
 	for (y = 0; y < table_size; y++)
 	{
 		_putchar('0');
