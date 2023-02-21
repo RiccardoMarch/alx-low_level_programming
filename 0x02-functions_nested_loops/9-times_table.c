@@ -43,9 +43,11 @@ void times_table(void)
 			}
 
 			index = 1;
-
 			for (index = 1; index < count; index++)
+			{
 				n *= 10;
+				printf(":x - ");
+			}
 
 			index = 0;
 
