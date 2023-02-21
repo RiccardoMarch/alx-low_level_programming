@@ -10,9 +10,8 @@ void times_table(void)
 {
 	int x, y, val, count, i, n;
 	/** max_count the amount of spaces between commas */
-	int max_count = 3;
 	/** table_size the size of the table 10x10, 20x20, 30x30 will work the same*/
-	int table_size = 10;
+	int max_count = 3, table_size = 10;
 
 	for (y = 0; y < table_size; y++)
 	{
@@ -37,7 +36,7 @@ void times_table(void)
 				n /= 10;
 			}
 
-			if(x != (table_size - 1))
+			if (x != (table_size - 1))
 				_putchar(',');
 		}
 		_putchar('\n');
