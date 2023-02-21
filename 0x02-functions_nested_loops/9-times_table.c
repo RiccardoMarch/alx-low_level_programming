@@ -5,7 +5,8 @@
 
 /**
 * times_table - void
-* Description: Prints the times table
+* Description: Prints the times table & it's flexible
+* you can change max_count & table_size without any issues
 * Return: Nothing
 */
 
@@ -19,8 +20,11 @@ void times_table(void)
 	int i;
 	int n = 1;
 	int k;
-	int max_count = 4;
-	int table_size = 15;
+	
+	/** max_count the amount of spaces between commas */
+	int max_count = 3;
+	/** table_size the size of the table 10x10, 20x20, 30x30 will work the same*/
+	int table_size = 10;
 
 	for (y = 0; y < table_size; y++)
 	{
