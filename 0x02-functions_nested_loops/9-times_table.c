@@ -24,7 +24,8 @@ void times_table(void)
 		for (x = 0; x < 10; x++)
 		{
 			if (x == 0) {
-				_putchar((x * y) + '0'); // value stays zero
+				/* x * y = 0, x is 0 */
+				_putchar((x * y) + '0');
 				_putchar(',');
 			}
 
