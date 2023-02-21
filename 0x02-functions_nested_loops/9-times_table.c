@@ -54,9 +54,10 @@ void times_table(void)
 			for (index = 0; index < count; index++)
 			{
 				putchar(((int)(val / n)) + '0');
+				printf("v[%d] n[%d]",(int)(val / n), n);
 				val = (val - (((int)val / n) * n));
 				n /= 10;
-				printf("%d", n);
+				
 			}
 			printf(",");
 
