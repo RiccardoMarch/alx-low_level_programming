@@ -19,8 +19,6 @@ void times_table(void)
 	int index;
 	int max_digits = 3;
 	int n = 1;
-	int i;
-	int c;
 
 	for (y = 0; y < 10; y++)
 	{
@@ -42,7 +40,7 @@ void times_table(void)
 				_putchar(' ');
 			}
 
-			for (index == 1; index < count; index++)
+			for (index = 1; index < count; index++)
 				n *= 10;
 
 			for (index = 0; index < count; index++)
