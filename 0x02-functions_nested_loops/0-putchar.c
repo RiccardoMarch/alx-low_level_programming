@@ -2,6 +2,7 @@
 #include <stdio.h>
 #include <time.h>
 #include <string.h>
+#include "main.h"
 
 /**
  *main-Entry point
@@ -17,8 +18,8 @@ int main(void)
 
 	for (i = 0; i < strlen(output); i++)
 	{
-		putchar(output[i]);
+		_putchar(output[i]);
 	}
-	putchar('\n');
+	_putchar('\n');
 	return (0);
 }
