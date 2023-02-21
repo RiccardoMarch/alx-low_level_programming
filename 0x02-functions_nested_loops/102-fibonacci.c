@@ -13,6 +13,8 @@ int main(void)
     result[0] = a;
     result[1] = b;
 
+    printf("%ld, %ld, ", a, b);
+    
     for (i = 2; i < 50; i++)
     {
         result[i] = result[i - 1] + result[i - 2];
