@@ -12,7 +12,6 @@
 int print_last_digit(int n)
 {
 	int val = (n < 0) ? (-1 * n): n;
-	int count = snprintf(NULL, 0, "%i", val);
 
 	printf("%d \n", val);
 	printf("%d", val%10);
