@@ -16,8 +16,7 @@ void times_table(void)
 	int y;
 	int val;
 	int count;
-	int index;
-	int max_digits = 3;
+	int i;
 	int n = 1;
 	int k;
 
@@ -31,24 +30,15 @@ void times_table(void)
 				_putchar(',');
 				continue;
 			}
-
 			n = 1;
-
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
 
-			for (index = 0; index < (max_digits - count); index++)
-			{
+			for (i = 0; i < (3 - count); i++)
 				_putchar(' ');
-			}
 
-			index = 1;
-			for (index = 1; index < count; index++)
-			{
+			for (i = 1; i < count; i++)
 				n *= 10;
-			}
-
-			index = 0;
 
 			for (index = 0; index < count; index++)
 			{
