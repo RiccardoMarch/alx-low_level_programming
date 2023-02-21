@@ -22,7 +22,6 @@ void times_table(void)
 			n = 1;
 			val = x * y;
 			count = snprintf(NULL, 0, "%i", val);
-
 			for (i = 0; i < (max_count - count); i++)
 				_putchar(' ');
 
@@ -35,7 +34,6 @@ void times_table(void)
 				val = (val - ((int)(val / n) * n));
 				n /= 10;
 			}
-
 			if (x != (table_size - 1))
 				_putchar(',');
 		}
