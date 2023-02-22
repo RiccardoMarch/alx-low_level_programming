@@ -28,7 +28,7 @@ int main(void)
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
 
-	for (i = 93; i < 99; i++)
+	for (i = 93; i < 100; i++)
 	{
 		
 		b_head = b_head + a_head;
