@@ -25,21 +25,22 @@ int main(void)
 
 	a_head = a / 1000000000;
 	a_tail = a % 1000000000;
+
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
 
 	for (; i < 99; i++)
 	{
-		overflow = (a_tail + b_tail) / 1000000000;
-		sum_tail = (a_tail + b_tail) - (1000000000 * overflow);
-		sum_head = (a_head + b_head) + overflow;
+		//overflow = (a_tail + b_tail) / 1000000000;
+		//sum_tail = (a_tail + b_tail) - (1000000000 * overflow);
+		//sum_head = (a_head + b_head) + overflow;
 
-		printf(", %lu%lu", sum_head, sum_tail);
+		printf(", %lu%lu", b_head + (b_tail / 1000000000), b_head % 1000000000);
 
-		a_head = b_head;
-		a_tail = b_tail;
-		b_head = sum_head;
-		b_tail = sum_tail;
+		b_head = b_head + a_head;
+		a_head = b_head - a_head;
+		b_tail = b_tail + a_tail;
+		a_tail = b_tail - a_tail;
 	}
 
 	printf("\n");
