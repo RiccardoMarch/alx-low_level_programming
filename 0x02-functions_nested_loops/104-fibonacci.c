@@ -1,5 +1,5 @@
 #include <stdio.h>
-#define MAX_LONG = 10000000000
+#define MAX_LONG 10000000000
 /**
 * main - Entry point
 * Return: 0 (Success)
