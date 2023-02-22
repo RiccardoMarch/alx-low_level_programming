@@ -15,7 +15,7 @@ int main(void)
 	for (i = 2; i < 98; i++)
 	{
 		result = b + a;
-		printf("%ld%s", result, (i == 97) ? "\n" : ", ");
+		printf("%lu%s", result, (i == 97) ? "\n" : ", ");
 		a = b;
 		b = result;
 	}
