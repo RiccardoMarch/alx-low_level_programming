@@ -7,17 +7,17 @@
 
 int main(void)
 {
-	long int i, a = 1, b = 2, result, sum;
+	long int i, a = 1, b = 2, result, sum = 2;
 
-	for (i = 0; i < 49; i++)
+	do 
 	{
-		result = ((sum % 2 == 0) && (sum <= 4000000)) ? result + b : result;
-		sum = a + b;
-		a = b;
-		b = sum;
+		b += a;
+		sum += (b % 2 == 0) ? b : 0;
+		a = b - a;
 	}
+	while (b + a < 4000000);
 
-	printf("%ld\n", result);
+	printf("%ld\n", sum);
 
 	return (0);
 }
