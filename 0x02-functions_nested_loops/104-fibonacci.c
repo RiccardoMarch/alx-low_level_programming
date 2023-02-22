@@ -10,8 +10,7 @@ int main(void)
 	int i, overflow;
 	unsigned long a = 1, b = 2;
 	unsigned long result;
-	long a_head, a_tail, b_head, b_tail, sum_head, sum_tail;
-
+	long a_head, a_tail, b_head, b_tail;
 	printf("%lu, %lu", a, b);
 
 	for (i = 2; i < 93; i++)
