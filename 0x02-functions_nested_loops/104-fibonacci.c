@@ -7,7 +7,7 @@
 
 int main(void)
 {
-	int i, overflow;
+	int i;
 	unsigned long a = 1, b = 2;
 	unsigned long result;
 	long a_head, a_tail, b_head, b_tail;
