@@ -11,7 +11,7 @@ int main(void)
 
 	for (i = 0; i < 49; i++)
 	{
-		result = ((b % 2 == 0) && (b < 4000000)) ? result + b : result;
+		result = ((sum % 2 == 0) && (sum <= 4000000)) ? result + b : result;
 		sum = a + b;
 		a = b;
 		b = sum;
