@@ -28,13 +28,16 @@ int main(void)
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
 
-	for (i = 91; i < 99; i++)
+	for (i = 93; i < 99; i++)
 	{
 		
 		b_head = b_head + a_head;
 		a_head = b_head - a_head;
 		b_tail = b_tail + a_tail;
 		a_tail = b_tail - a_tail;
+
+		printf(", %lu%lu", b_head + (b_tail / 1000000000), b_head % 1000000000);
+
 	}
 
 	printf("\n");
