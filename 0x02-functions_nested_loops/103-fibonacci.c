@@ -9,13 +9,11 @@ int main(void)
 {
 	long int a = 1, b = 2, sum = 2;
 
-	do 
-	{
+	do {
 		b += a;
 		sum += (b % 2 == 0) ? b : 0;
 		a = b - a;
-	}
-	while (b + a < 4000000);
+	} while (b + a < 4000000);
 
 	printf("%ld\n", sum);
 
