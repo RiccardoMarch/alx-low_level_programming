@@ -31,10 +31,6 @@ int main(void)
 
 	for (; i < 99; i++)
 	{
-		//overflow = (a_tail + b_tail) / 1000000000;
-		//sum_tail = (a_tail + b_tail) - (1000000000 * overflow);
-		//sum_head = (a_head + b_head) + overflow;
-
 		printf(", %lu%lu", b_head + (b_tail / 1000000000), b_head % 1000000000);
 
 		b_head = b_head + a_head;
