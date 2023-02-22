@@ -7,8 +7,8 @@
 
 int main(void)
 {
-	unsigned long int i, a = 1, b = 2;
-	unsigned long int result;
+	unsigned long i, a = 1, b = 2;
+	unsigned long result;
 
 	printf("%lu, %lu, ", a, b);
 
