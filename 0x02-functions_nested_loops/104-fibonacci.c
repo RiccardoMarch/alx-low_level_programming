@@ -29,7 +29,7 @@ int main(void)
 		{
 			c2 = b1 + b2;
 			b1 = b2, b2 = c2;
-			printf("%lu", a2);
+			printf("%lu", b2);
 		}
 
 		if(i != 97)
