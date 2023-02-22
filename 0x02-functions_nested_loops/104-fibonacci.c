@@ -15,7 +15,7 @@ int main(void)
 
 	for (i = 2; i < 98; i++)
 	{
-		if(b1 + b2 > MAX_LONG || a2 > 0 || a1 > 0)
+		if (b1 + b2 > MAX_LONG || a2 > 0 || a1 > 0)
 		{
 			c1 = (b1 + b2) / MAX_LONG;
 			c2 = (b1 + b2) % MAX_LONG;
@@ -25,14 +25,14 @@ int main(void)
 			b1 = b2, b2 = c2;
 			printf("%lu%010lu", a2, b2);
 		}
-		else 
+		else
 		{
 			c2 = b1 + b2;
 			b1 = b2, b2 = c2;
 			printf("%lu", b2);
 		}
 
-		if(i != 97)
+		if (i != 97)
 			printf(", ");
 	}
 
