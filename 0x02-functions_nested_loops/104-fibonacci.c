@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#define MAX_LONG = 10000000000
 /**
 * main - Entry point
 * Return: 0 (Success)
@@ -8,36 +8,35 @@
 int main(void)
 {
 	int i;
-	unsigned long a = 1, b = 2;
-	unsigned long result;
-	long a_head, a_tail, b_head, b_tail;
-	printf("%lu, %lu", a, b);
+	unsigned long a1 = 1, a2 = 2, b1 = 0, b2 = 0;
+	unsigned long c1, c2, c3;
 
-	for (i = 2; i < 91; i++)
+	printf("%lu, %lu, ", a1, a2);
+
+	for (i = 2; i < 98; i++)
 	{
-		result = b + a;
-		
-		a = b;
-		b = result;
-		printf(", %lu", result);
-	}
+		if(a1 + a2 > MAX_LONG || b2 > 0 || b1 > 0)
+		{
+			c1 = (a1 + a2) / MAX_LONG;
+			c2 = (a1 + b2) % MAX_LONG;
+			c3 = b1 + b2 + c1;
 
-	a_head = a / 1000000000;
-	a_tail = a % 1000000000;
+			b1 = b2;
+			b2 = c3;
+			a1 = a2;
+			a2 = c2;
+			printf("%lu%010lu", b2, a2);
+		}
+		else 
+		{
+			c2 = a1 + a2;
+			a1 = a2;
+			a2 = c2;
+			printf("%lu", a2);
+		}
 
-	b_head = b / 1000000000;
-	b_tail = b % 1000000000;
-
-	for (i = 92; i < 99; i++)
-	{
-		
-		b_head = b_head + a_head;
-		a_head = b_head - a_head;
-		b_tail = b_tail + a_tail;
-		a_tail = b_tail - a_tail;
-
-		printf(", %lu%lu", b_head + (b_tail / 1000000000), b_head % 1000000000);
-
+		if(count != 97)
+			printf(", ");
 	}
 
 	printf("\n");
