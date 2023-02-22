@@ -28,10 +28,9 @@ int main(void)
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
 
-	for (i = 92; i < 99; i++)
+	for (i = 91; i < 99; i++)
 	{
-		printf(", %lu%lu", b_head + (b_tail / 1000000000), b_head % 1000000000);
-
+		
 		b_head = b_head + a_head;
 		a_head = b_head - a_head;
 		b_tail = b_tail + a_tail;
