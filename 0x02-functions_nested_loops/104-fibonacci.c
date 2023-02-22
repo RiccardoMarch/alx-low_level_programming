@@ -8,30 +8,27 @@
 int main(void)
 {
 	int i;
-	unsigned long int a1 = 1, a2 = 2, b1 = 0, b2 = 0;
+	unsigned long int b1 = 1, b2 = 2, a1 = 0, a2 = 0;
 	unsigned long int c1, c2, c3;
 
-	printf("%lu, %lu, ", a1, a2);
+	printf("%lu, %lu, ", b1, b2);
 
 	for (i = 2; i < 98; i++)
 	{
-		if(a1 + a2 > MAX_LONG || b2 > 0 || b1 > 0)
+		if(b1 + b2 > MAX_LONG || a2 > 0 || a1 > 0)
 		{
-			c1 = (a1 + a2) / MAX_LONG;
-			c2 = (a1 + b2) % MAX_LONG;
-			c3 = b1 + b2 + c1;
+			c1 = (b1 + b2) / MAX_LONG;
+			c2 = (b1 + b2) % MAX_LONG;
+			c3 = a1 + a2 + c1;
 
-			b1 = b2;
-			b2 = c3;
-			a1 = a2;
-			a2 = c2;
-			printf("%lu%010lu", b2, a2);
+			a1 = a2, a2 = c3;
+			b1 = b2, b2 = c2;
+			printf("%lu%010lu", a2, b2);
 		}
 		else 
 		{
-			c2 = a1 + a2;
-			a1 = a2;
-			a2 = c2;
+			c2 = b1 + b2;
+			b1 = b2, b2 = c2;
 			printf("%lu", a2);
 		}
 
