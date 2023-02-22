@@ -13,7 +13,7 @@ int main(void)
 	long a_head, a_tail, b_head, b_tail;
 	printf("%lu, %lu", a, b);
 
-	for (i = 2; i < 93; i++)
+	for (i = 2; i < 91; i++)
 	{
 		result = b + a;
 		
@@ -28,7 +28,7 @@ int main(void)
 	b_head = b / 1000000000;
 	b_tail = b % 1000000000;
 
-	for (; i < 99; i++)
+	for (i = 92; i < 99; i++)
 	{
 		printf(", %lu%lu", b_head + (b_tail / 1000000000), b_head % 1000000000);
 
