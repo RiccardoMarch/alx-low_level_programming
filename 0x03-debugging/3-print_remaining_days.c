@@ -12,11 +12,12 @@
 
  void print_remaining_days(int month, int day, int year)
  {
-	bool is_leap_year = ((year % 4) == 0 && (year % 100) != 0 || (year % 400) == 0) ? true : false;
-	int total_days = (is_leap_year) ? 366: 365;
-	int days_passed = day;
-	int i;
+	bool is_leap_year;
+	int total_days, days_passed, i;
 
+	is_leap_year = ((year % 4) == 0 && (year % 100) != 0 || (year % 400) == 0) ? true : false;
+	total_days = (is_leap_year) ? 366: 365;
+	days_passed = day;
 
 
 	printf("Day of the year: %d\n", days_passed);
