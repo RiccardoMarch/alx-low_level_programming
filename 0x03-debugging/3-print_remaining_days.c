@@ -21,7 +21,7 @@
 		if (i == 1)
 			days_passed += (is_leap_year) ? 29 : 28;
 		else
-			days_passed += (((i + 1) % 2) == 0) ? 31 : 30;
+			days_passed += (((i + 1) % 2) == 0) ? 30 : 31;
 	}
 
 	if (!is_leap_year && month == 2 && day == 60)
