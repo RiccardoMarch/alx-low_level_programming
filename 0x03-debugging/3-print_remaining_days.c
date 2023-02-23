@@ -24,7 +24,7 @@
 			days_passed += (((i + 1) % 2) == 0) ? 31 : 30;
 	}
 
-	if (!is_leap_year && month == 2 && day != days_passed)
+	if (!is_leap_year && month == 2 && day == 60)
 		printf("Invalid date: %02d/%02d/%04d\n", month,day - 31, year);
 	else {
 		printf("Day of the year: %d\n", days_passed);
