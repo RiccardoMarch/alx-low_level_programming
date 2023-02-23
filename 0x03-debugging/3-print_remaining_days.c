@@ -13,7 +13,7 @@
 
  void print_remaining_days(int month, int day, int year)
  {
-	int is_leap_year = ((((year % 4) == 0) && ((year % 100) != 0)) || ((year % 400) == 0)) ? 1 : 0;
+	int is_leap_year = ((((year % 4) == 0) && ((year % 100) != 0)) || ((year % 400) == 0)) ? true : false;
 	int total_days = (is_leap_year == true) ? 366: 365;
 	int days_passed = 0;
 	int i;
