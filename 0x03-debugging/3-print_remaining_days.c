@@ -17,12 +17,7 @@
 	int days_passed = day;
 	int i;
 
-	for (i = 1; i < month; i++) {
-		if (i == 1)
-			days_passed += (is_leap_year) ? 29 : 28;
-		else
-			days_passed += (((i + 1) % 2) == 0) ? 30 : 31;
-	}
+
 
 	printf("Day of the year: %d\n", days_passed);
 	printf("Remaining days: %d\n", (total_days - days_passed));
