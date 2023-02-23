@@ -14,15 +14,18 @@
  {
 	int is_leap_year = ((((year % 4) == 0) && ((year % 100) != 0)) || ((year % 400) == 0)) ? 1 : 0;
 	int total_days = (is_leap_year) ? 366: 365;
-	int days_passed = day;
+	int days_passed;
 	int i;
 
-	for (i = 1; i < month; i++) {
+	for (i = 0; i < month; i++) {
 		if (i == 1)
-			days_passed += (is_leap_year) ? 1 : 0;
+			days_passed += (is_leap_year) ? 29 : 28;
 		else
-			days_passed += (((i + 1) % 2) == 0) ? 0 : 1;
+			days_passed += (((i + 1) % 2) == 0) ? 30 : 31;
 	}
+
+	if (!is_leap_year && month = 2 && day != days_passed)
+		printf("Invalid date: %02d/%02d/%04d\n", month,day - 31, year);
 
 	printf("Day of the year: %d\n", days_passed);
 	printf("Remaining days: %d\n", (total_days - days_passed));
