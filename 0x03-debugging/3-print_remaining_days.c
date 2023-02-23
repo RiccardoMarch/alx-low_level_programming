@@ -18,7 +18,8 @@
 	int days_passed = 0;
 	int i;
 
-	for (i = 0; i < month; i++) {
+	for (i = 0; i < month; i++)
+	{
 		if (i == 1)
 			days_passed += (is_leap_year == true) ? 29 : 28;
 		else
@@ -26,8 +27,10 @@
 	}
 
 	if (is_leap_year == false && month == 2 && day == 60)
+	{
 		 /*printf("Invalid date: %02d/%02d/%04d\n", month,day - 31, year);*/
 		 printf("");
+ 	}
 	else {
 		printf("Day of the year: %d\n", day);
 		printf("Remaining days: %d\n", (total_days - days_passed));
