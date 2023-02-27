@@ -21,7 +21,7 @@ int _atoi(char *str)
 			if (result > 0)
 				result *= 10;
 
-			result += *(str + i);
+			result += (str[i] - '0');
 			length++;
 		}
 
