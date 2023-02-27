@@ -14,7 +14,7 @@ int _atoi(char *str)
 		if (length > 0 && (str[i] > '9' || str[i] < '0'))
 			break;
 
-		s *= (str[i] == '-') -1 : 1;
+		s *= (str[i] == '-') ? -1 : 1;
 
 		if (str[i] >= '0' && str[i] <= '9') {
 			if (result > 0)
