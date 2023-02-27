@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * reset_to_98 - resets passed argument to 98
 * @n: pointer value to reset

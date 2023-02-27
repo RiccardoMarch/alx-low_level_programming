@@ -1,3 +1,4 @@
+#include "main.h"
 /**
 * swap_int - it swaps the value of the passed int args
 * @a: pointer value to swap with @b
