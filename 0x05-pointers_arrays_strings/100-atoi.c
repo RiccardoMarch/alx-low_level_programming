@@ -9,8 +9,8 @@
 int _atoi(char *str)
 {
 	int i = 0, length = 0, s = 1;
-	unsigned int = 0;
-	
+	unsigned int result = 0;
+
 	do {
 		if (length > 0 && (str[i] > '9' || str[i] < '0'))
 			break;
