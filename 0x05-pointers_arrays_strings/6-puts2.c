@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
 * puts2 - prints out char pointer and skips a char
 * @str: pointer to a string
