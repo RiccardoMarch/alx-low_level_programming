@@ -5,7 +5,7 @@
 * Return: nothing
 */
 
-void print_rev(char *s)
+void print_rev(char *str)
 {
 	int length;
 
@@ -14,6 +14,6 @@ void print_rev(char *s)
 
 	for (length--; length >= 0; length--)
 		_putchar(s[length]);
-	
+
 	_putchar('\n');
 }
