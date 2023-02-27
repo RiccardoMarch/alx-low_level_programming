@@ -18,8 +18,8 @@ void rev_string(char *str)
 
 	for (i = 0; i < length / 2; i++)
 	{
-		temp = *end_ptr;
-		*end_ptr = start_ptr;
+		temp = (int*)end_ptr;
+		*end_ptr = *start_ptr;
 		start_ptr = temp;
 
 		start_ptr++;
