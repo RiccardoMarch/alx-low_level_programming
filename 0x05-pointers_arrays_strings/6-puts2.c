@@ -15,6 +15,5 @@ void puts2(char *str)
 
 	_putchar('\n');
 
-	free(*str);
-	*str = NULL;
+	*str = '';
 }
