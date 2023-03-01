@@ -1,7 +1,7 @@
 #include "main.h"
 
 /**
-* *_strcat - append string to the end of another string
+* *_strncat - append string to the end of another string
 * @dest: pointer to destination string
 * @src: pointer to source string
 * Return: the value of dest
@@ -26,6 +26,8 @@ char *_strncat(char *dest, char *src, int n)
 		offset++;
 		i++;
 	} while(i < n);
+
+	dest[offset] = '\0';
 	
 	return (dest);
 }
