@@ -9,8 +9,8 @@
 
 char *_strcat(char *dest, char *src)
 {
-	int offset = 0;
-	int i = 0;
+	int offset = 2;
+	int i = 1;
 
 	do {
 		offset++;
