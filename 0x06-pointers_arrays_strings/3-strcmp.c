@@ -14,7 +14,7 @@ int _strcmp(char *a, char *b)
 	i = 0;
 	result = 0;
 
-	while(result == 0)
+	while (result == 0)
 	{
 		if ((a[i] == '\0') && (b[i] == '\0'))
 			break;
