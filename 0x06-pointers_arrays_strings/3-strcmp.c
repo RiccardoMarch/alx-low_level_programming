@@ -10,14 +10,14 @@
 int _strcmp(char *a, char *b)
 {
 	int i = 0;
-    int result = 0;
+	int result = 0;
 
 	while(result == 0)
 	{
 		if ((a[i] == '\0') && (b[i] == '\0'))
 			break;
 
-        result = a[i] - b[i];
+		result = a[i] - b[i];
 		i++;
 	}
 
