@@ -1,9 +1,10 @@
 #include "main.h"
 
 /**
-* *_strncat - append string to the end of another string
+* _strncat - append string to the end of another string
 * @dest: pointer to destination string
 * @src: pointer to source string
+* @n: length of bytes to append
 * Return: the value of dest
 */
 
@@ -19,15 +20,11 @@ char *_strncat(char *dest, char *src, int n)
 
 	do {
 		dest[offset] = src[i];
-
-		if (src[i] == '\0')
-			break;
-
 		offset++;
 		i++;
-	} while(i < n);
+	} while(i < n && src[i] != '\n');
 
 	dest[offset] = '\0';
-	
+
 	return (dest);
 }
