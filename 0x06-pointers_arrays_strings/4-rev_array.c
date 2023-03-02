@@ -12,12 +12,14 @@ void reverse_array(int *array, int n)
 	int i = 0;
 	int temp;
 
+	if (n < 2)
+		return;
+
 	do {
 		n--;
 		temp = array[i];
 		array[i] = array[n];
 		array[n] = temp;
 		i++;
-		
 	} while (i <= n);
 }
