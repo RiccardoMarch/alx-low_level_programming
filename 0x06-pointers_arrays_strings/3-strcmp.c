@@ -17,7 +17,7 @@ int _strcmp(char *a, char *b)
 		if ((a[i] == '\0') && (b[i] == '\0'))
 			break;
 
-		result = a[i] - b[i];
+		result = (a[i] - b[i]);
 		i++;
 	}
 
