@@ -4,7 +4,7 @@
 * _strcmp - compares value of A & B
 * @a: pointer to string A
 * @b: pointer to string B
-* Return: the True if equal, else false
+* Return: an integer either True or False 
 */
 
 int _strcmp(char *a, char *b)
