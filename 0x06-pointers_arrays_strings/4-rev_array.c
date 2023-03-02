@@ -1,5 +1,5 @@
 #include "main.h"
-
+#include <stdio.h>
 /**
 * reverse_array - reverse an integer array
 * @array: pointer to integer array
@@ -20,5 +20,8 @@ void reverse_array(int *array, int n)
 		array[n] = temp;
 		i++;
 		n--;
+		
 	} while (i < (n / 2));
+
+	print_array(array, n);
 }
