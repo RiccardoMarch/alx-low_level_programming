@@ -9,8 +9,10 @@
 
 int _strcmp(char *a, char *b)
 {
-	int i = 0;
-	int result = 0;
+	int i, result;
+
+	i = 0;
+	result = 0;
 
 	while(result == 0)
 	{
