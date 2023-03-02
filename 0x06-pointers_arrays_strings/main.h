@@ -9,4 +9,6 @@ char *_strncpy(char *dest, char *src, int n);
 
 int _strcmp(char *a, char *b);
 
+void reverse_array(int *array, int n);
+
 #endif
