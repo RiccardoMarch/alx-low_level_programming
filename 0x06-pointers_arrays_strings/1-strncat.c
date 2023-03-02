@@ -13,6 +13,9 @@ char *_strncat(char *dest, char *src, int n)
 	int offset = 0;
 	int i = 0;
 
+	if(n == 0)
+		return (dest);
+
 	while (dest[offset] != '\0')
 		offset++;
 
