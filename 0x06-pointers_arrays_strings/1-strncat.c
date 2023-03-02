@@ -22,7 +22,5 @@ char *_strncat(char *dest, char *src, int n)
 		i++;
 	} while(i < n && src[i] != '\n');
 
-	//dest[offset] = '\0';
-
 	return (dest);
 }
