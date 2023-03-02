@@ -8,7 +8,6 @@
 * Return: the value of dest
 */
 
-
 char *_strncat(char *dest, char *src, int n)
 {
 	int offset = 0;
