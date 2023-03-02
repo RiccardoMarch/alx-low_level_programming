@@ -21,7 +21,5 @@ void reverse_array(int *array, int n)
 		i++;
 		n--;
 		
-	} while (i < (n / 2));
-
-	print_array(array, n);
+	} while (i < ((n + 1) / 2));
 }
