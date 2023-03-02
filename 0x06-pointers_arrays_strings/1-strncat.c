@@ -10,9 +10,6 @@
 
 char *_strncat(char *dest, char *src, int n)
 {
-	int offset = 0;
-	int i = 0;
-
 	if(n == 0)
 		return (dest);
 
@@ -25,7 +22,7 @@ char *_strncat(char *dest, char *src, int n)
 		
 		dest++;
 	} while(--n > 0);
-	
+
 	*dest = 0;
 
 	return (dest);
