@@ -11,10 +11,10 @@ int _strcmp(char *a, char *b);
 
 void reverse_array(int *array, int n);
 
-char *string_toupper(char *s);
+char *string_toupper(char *);
 
-char *cap_string(char *s);
+char *cap_string(char *);
 
-char *leet(char *s);
+char *leet(char *);
 
 #endif
