@@ -11,15 +11,15 @@ char *leet (char *s)
 	int j = 0;
 	int index;
 	int temp;
-	int low_letters[] = { 97, 101, 111, 116, 108 };
-	int numbers[] = { 52, 51, 48, 55, 49 };
+	char *low_letters = "aeotl";
+	char *numbers = "43071";
 
 	while (s[j] != '\0')
 	{
 		for (index = 0; index < 5; index++)
 		{
 			temp = s[j];
-			if(temp == low_letters[i] || temp == (low_letters[i] - 32))
+			if ((temp == low_letters[i]) || (temp == (low_letters[i] - 32)))
 			{
 				s[j] = numbers[i];
 				break;
