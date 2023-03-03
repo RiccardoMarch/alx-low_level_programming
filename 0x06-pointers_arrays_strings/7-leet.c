@@ -8,13 +8,13 @@
 
 char *leet (char *s)
 {
-	int j;
+	int j = 0;
 	int index;
 	int temp;
 	int low_letters[] = { 97, 101, 111, 116, 108 };
 	int numbers[] = { 52, 51, 48, 55, 49 };
 
-	for (j = 0; s[j] != '\0'; j++)
+	while (s[j] != '\0')
 	{
 		for (index = 0; index < 5; index++)
 		{
@@ -25,6 +25,7 @@ char *leet (char *s)
 				break;
 			}
 		}
+		j++;
 	}
 
 	return (s);
