@@ -8,7 +8,7 @@
 
 char *leet(char *s)
 {
-	int length = 0;
+	int length;
 	int index;
 	int temp;
 
@@ -16,7 +16,7 @@ char *leet(char *s)
 	int upp_letters[] = {65, 69, 79, 84, 76};
 	int numbers[] = {52, 51, 48, 55, 49};
 
-	for (; s[length] != '\0'; length++)
+	for (length = 0; s[length] != '\0'; length++)
 	{
 		for (index = 0; index < 5; index++)
 		{
